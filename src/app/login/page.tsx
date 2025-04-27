@@ -24,7 +24,7 @@ const router = useRouter();
             setLoading(true);
             const response = await axios.post("/api/user/login",user);
             console.log("Login Success",response.data);
-            router.push("/dashboard");
+            router.push("/profile");
 
         } catch (error:any) {
             
